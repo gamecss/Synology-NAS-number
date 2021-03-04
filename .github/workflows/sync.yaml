@@ -15,7 +15,7 @@ jobs:
         run: |
           git clone https://gitee.com/gamecss/aaa.git
           cd aaa
-          git remote set origin https://gamecss:${{ secrets.GITHUB_TOKEN }}@github.com/gamecss/Synology-NAS-number.git
+          git remote set-url origin https://gamecss:${{ secrets.GITHUB_TOKEN }}@github.com/gamecss/Synology-NAS-number.git
           git push -f origin master
        # uses: wearerequired/git-mirror-action@master
       #  with:
