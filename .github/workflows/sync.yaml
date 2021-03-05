@@ -18,6 +18,8 @@ jobs:
           cd aaa
           wget https://github.com/gamecss/Synology-NAS-number/raw/sync/RDME.md -O README.md
           git add README.md
+          git config --global user.email "1156393759@qq.com"
+          git config --global user.name "github-actions"
           git commit -m "sync and add README.md"
           git remote set-url origin https://gamecss:${{ secrets.GITHUB_TOKEN }}@github.com/gamecss/Synology-NAS-number.git
           git push -f origin master
