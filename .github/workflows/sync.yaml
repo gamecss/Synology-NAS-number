@@ -16,6 +16,9 @@ jobs:
         run: |
           git clone https://gitee.com/gamecss/aaa.git
           cd aaa
+          wget https://github.com/gamecss/Synology-NAS-number/raw/sync/RDME.md -O README.md
+          git add README.md
+          git commit -m "sync and add README.md"
           git remote set-url origin https://gamecss:${{ secrets.GITHUB_TOKEN }}@github.com/gamecss/Synology-NAS-number.git
           git push -f origin master
        # uses: wearerequired/git-mirror-action@master
